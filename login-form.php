@@ -13,7 +13,7 @@
 <style>
 .login {
     margin: 400px;
-    background-color: crimson;
+    background-color: palevioletred;
     border-radius: 10px;
 }
 
@@ -30,16 +30,20 @@ label {
     color: white;
 
 }
+
+.mess {
+    color: black;
+}
 </style>
 
 <body>
     <div class="login p-5 my-5">
         <h1>Login</h1>
-        <?php
+        <p class="mess"><?php
             if(isset($_GET['message'])){
                 echo $_GET['message'];
             }
-        ?>
+        ?></p>
         <form action="login-check.php" method="POST">
             <div class="mt-3 my-2">
                 <label for="username">
